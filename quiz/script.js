@@ -22,7 +22,7 @@ const questions = [
     {
         question: "5) A ditudura de Augusto Pinochet no Chile terminou em 1980?",
         answer: false,
-        explanation: "A ditudura no Chile terminou em 1988. (1973 - 1998)"
+        explanation: "A ditudura no Chile terminou em 1988. (1973 - 1988)"
     },
     {
         question: "6) A ditadura militar na Argentina, que tirou que depôs a presidenta Isabelita Perón, ocorreu em 1976.",
@@ -45,7 +45,7 @@ const questions = [
         explanation: "A informação é verdadeira."
     },
     {
-        question: "10) O fim do regime aconteceu oficialmente em 1980",
+        question: "10) O fim do regime aconteceu oficialmente em 1980?",
         answer: false,
         explanation: "Ela terminou oficialmente em 1983, um ano após a derrota na Guerra das Malvinas."
     }
