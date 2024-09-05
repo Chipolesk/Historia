@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditadura Militar no Chile</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>NPC DE HISTÓRIA 1342</h1>
+        <h2>Grupo A - Prof. Elis</h2>
+    </header>
+    <main>
+        
+        <div class="conteudo">
+            <div class="quiz-container">
+                <div id = "perguntas">
+                    <div class="quiz-question" id="quizQuestion"></div>
+                    <div class="quiz-buttons">
+                        <button id="trueButton" onclick="checkAnswer(true)">Verdadeiro</button>
+                        <button id="falseButton" onclick="checkAnswer(false)">Falso</button>
+                    </div>
+                    <div class="quiz-answer" id="quizAnswer"></div>
+                    <button class="next-question" id="nextQuestion" onclick="nextQuestion()" style="display: none;">Próxima Pergunta</button>
+                </div>
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <img id="resultImage" src="" alt="Resultado">
+                    <p id="resultText"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="https://eterj.com.br/" target="_blank">
+        <img class="fixed-image" src="../pics/logoterj.png" alt="Imagem Fixa">
+    </a>
+    <script src="./script.js"></script>
+</body>
+</html>
