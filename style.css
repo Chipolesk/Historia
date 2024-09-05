@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: whitesmoke;
+    position: relative;
+    text-align: center; /* Centraliza o texto */
+    overflow-x: hidden; /* Evita overflow horizontal */
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./pics/argchile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header {
+    background-color: #181818;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 10%;
+    text-align: center; /* Centraliza o texto */
+}
+
+.resumo, .quiz {
+    background-color: #181818;
+    margin: 1rem 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0000001a;
+    text-align: center; /* Centraliza o texto */
+    border: 8px #555 solid;
+}
+
+.resumo h3, .quiz h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.resumo p {
+    font-size: 18px;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+    gap: 1rem;
+}
+
+.resumo-item {
+    flex: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+}
+
+.resumo-item img {
+    display: block;
+    border: 8px solid #555;
+    border-radius: 4px;
+    margin-right: 0;
+    transition: border-color 0.3s;
+    width: 100%;
+    max-width: 150px;
+}
+.resumo-item img:hover {
+    border-color: #28a745;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 60px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+.botao:hover {
+    background-color: #555;
+}
+
+.fixed-image {
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .resumo, .quiz {
+        padding: 10px;
+    }
+
+    .resumo h3, .quiz h3 {
+        font-size: 20px;
+    }
+
+    .resumo p {
+        font-size: 16px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 150px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
